@@ -1,0 +1,13 @@
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.mainpage {
+  margin: 10px 30px;
+}
+.formEl {
+  place-self: center;
+}
+/* .header {
+  
+} */
