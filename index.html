@@ -12,19 +12,31 @@
 <body>
     <div class="container">
         <div class="mainpage">
+            <!-- Working on external dropdown Navbar, to hold menu items  -->
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                    <h5 class="text-white h4">Collapsed content</h5>
+                    <span class="text-muted">Toggleable via the navbar brand.</span>
+                </div>
+            </div>
+            <nav class="navbar navbar-light bg-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span> <!-- This is hamburger icon-->
+                    </button>
+                </div>
+            </nav>
             <header class="header row">
                 <img src="#" alt="Rushcliffe logo" class="col-sm-2 siteLogo">
                 <h1 class="col-sm-6 top-banner">
                     Welcome to Rushcliffe Borough!
                 </h1>
                 <div class="col-sm-4 formEl">
-                    <form action="" class="row gy-2 gx-3 align-items-center search-form" id="search-form">
-                        <div class="col-10">
-                            <input type="search" class="form-control" placeholder="What can i help you with?"/>
-                        </div> 
-                       <div class="col-2">
-                           <input type="submit" value="Search"/>
-                        </div> 
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="What do you need.." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </div>
             </header>
