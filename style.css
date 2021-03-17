@@ -1,13 +1,16 @@
-header {
+/* body {
   display: flex;
-  justify-content: space-between;
+} */
+.container {
+  border: 1px dotted goldenrod;
 }
 .mainpage {
   margin: 10px 30px;
+  border: 2px solid crimson;
 }
-.formEl {
+/* .formEl {
   place-self: center;
-}
+} */
 /* .header {
   
 } */

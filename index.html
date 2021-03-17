@@ -7,26 +7,26 @@
     <!-- adding Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="style.css">
+ </head>
 <body>
     <div class="container">
         <div class="mainpage">
-            <header class="header">
-                    <img src="#" alt="Rushcliffe logo" class="siteLogo">
-                    <h1 class="top-banner">
-                        Welcome to Rushcliffe Borough!
-                    </h1>
-
-                <form action="" class="row g-3 search-form" id="search-form">
-                    <div class="col-sm-9 formEl">
-                        <input type="search" class="form-control" placeholder="What can i help you with?"/>
-                    </div>
-                    <div class="col-sm-3 formEl">
-                        <input type="submit" value="Search">
-                    </div>
-                    <!-- <input type="submit" value="Search"> -->
-                </form>
-                
+            <header class="header row">
+                <img src="#" alt="Rushcliffe logo" class="col-sm-2 siteLogo">
+                <h1 class="col-sm-6 top-banner">
+                    Welcome to Rushcliffe Borough!
+                </h1>
+                <div class="col-sm-4 formEl">
+                    <form action="" class="row gy-2 gx-3 align-items-center search-form" id="search-form">
+                        <div class="col-10">
+                            <input type="search" class="form-control" placeholder="What can i help you with?"/>
+                        </div> 
+                       <div class="col-2">
+                           <input type="submit" value="Search"/>
+                        </div> 
+                    </form>
+                </div>
             </header>
             
         </div>
