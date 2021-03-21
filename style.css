@@ -6,6 +6,30 @@
   margin: 10px 15px;
   border: 2px solid crimson;
 }
-/* .formEl {
-  place-self: center;
+.top-banner {
+  background: #00457c;
+}
+.bannerRight {
+  padding: 5px;
+}
+.headerLinks {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.headerLinks li {
+  /* color: white; */
+  /* display: inline;
+  padding: 0 10px;
+  margin: 0; */
+  /* border-left: 2px solid white; */
+}
+.headerLinks a {
+  text-decoration: none;
+  color: white;
+}
+/* .firstHL {
+  border-left: 0;
 } */
