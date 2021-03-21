@@ -36,3 +36,6 @@
 .headerLinks .firstHL {
   border-left: none;
 }
+.mainContent {
+  display: flex;
+}
