@@ -8,28 +8,31 @@
 }
 .top-banner {
   background: #00457c;
+  margin-bottom: 20px;
 }
 .bannerRight {
   padding: 5px;
+  /* text-align: right; */
+  /* float: right; */
 }
 .headerLinks {
   list-style: none;
   padding-left: 0;
   display: flex;
   justify-content: space-between;
-  color: white;
+  /* color: white; */
+  font-size: 13px;
 }
 .headerLinks li {
-  /* color: white; */
-  /* display: inline;
+  /* display: inline; */
   padding: 0 10px;
-  margin: 0; */
-  /* border-left: 2px solid white; */
+  margin: 0;
+  border-left: 2px solid white;
 }
 .headerLinks a {
   text-decoration: none;
   color: white;
 }
-/* .firstHL {
-  border-left: 0;
-} */
+.headerLinks .firstHL {
+  border-left: none;
+}
