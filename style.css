@@ -20,7 +20,7 @@
   padding-left: 0;
   display: flex;
   justify-content: space-between;
-  /* color: white; */
+  margin-top: 10px;
   font-size: 13px;
 }
 .headerLinks li {
