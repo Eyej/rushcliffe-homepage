@@ -36,6 +36,33 @@
 .headerLinks .firstHL {
   border-left: none;
 }
-.mainContent {
+.promotions {
   display: flex;
+  position: relative;
+  height: 250px;
+  overflow-y: scroll;
+}
+.promoContent {
+  font-size: 13px;
+  float: left;
+  color: rgb(85, 85, 85);
+  /* margin: 0 10px 10px 10px; for overall promo parent */
+}
+.promoImage {
+  display: block;
+  max-width: 100%;
+  margin: 0 10px;
+  /* margin: auto; */
+}
+.promoText {
+  margin: 0 10px;
+  padding: 5px;
+  font-weight: 400;
+}
+.promoText p a {
+  color: rgb(85, 85, 85);
+}
+.promoButtons {
+  float: right;
+  font-size: 13px;
 }
