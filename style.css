@@ -1,10 +1,14 @@
 /* Styling for Rushcliffe Page */
+body {
+  background: #dcddde;
+}
 .container {
   border: 1px dotted goldenrod;
 }
 .mainpage {
   margin: 10px 15px;
   border: 2px solid crimson;
+  background: white;
 }
 .top-banner {
   background: #00457c;
