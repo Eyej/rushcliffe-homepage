@@ -76,6 +76,9 @@ body {
   color: rgb(85, 85, 85);
   /* text-align: left; */
 }
+.promoText p a:hover {
+  color: #57822b;
+}
 .promoButtons {
   float: right;
   font-size: 13px;
