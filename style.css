@@ -49,16 +49,16 @@ body {
 .promoBox {
   height: 200px;
   overflow-y: scroll;
+  margin: 0 10px 10px 10px;
 }
 .promoContent {
   font-size: 13px;
   float: left;
   color: rgb(85, 85, 85);
-  /* margin: 0 10px 10px 10px; for overall promo parent */
 }
 .promoImage {
   display: block;
-  max-width: 100%;
+  max-width: fit-content;
   margin: 0 10px;
   /* margin: auto; */
 }
