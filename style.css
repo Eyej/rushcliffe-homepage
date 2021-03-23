@@ -84,11 +84,12 @@ body {
   font-size: 13px;
 }
 /* Not yet in use */
-/* .active{
-  background: #CCC;
-    color: #444;
+.active {
+  background-color: #235f93;
+  /* background: #CCC; */
+  color: #444;
 }
-.promoLinksli :before{
+/* .promoLinksli :before{
   text-align: center;
     background: url(/media/1rushcliffe/styleassets/images/bulleticons/right-arrow-large.png) no-repeat #CFD85B;
     background-position: center;
