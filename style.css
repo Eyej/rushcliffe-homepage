@@ -44,7 +44,6 @@ body {
   display: flex;
   position: relative;
   height: 250px;
-  overflow-y: scroll;
 }
 .promoBox {
   height: 200px;
