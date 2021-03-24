@@ -83,17 +83,32 @@ body {
   float: right;
   font-size: 13px;
 }
-/* Not yet in use */
+.promoButtons a {
+  height: 45px;
+  background: #666;
+  color: #fff;
+}
+
+/* Not yet in use
 .active {
   background-color: #235f93;
   /* background: #CCC; */
-  color: #444;
-}
-/* .promoLinksli :before{
-  text-align: center;
-    background: url(/media/1rushcliffe/styleassets/images/bulleticons/right-arrow-large.png) no-repeat #CFD85B;
-    background-position: center;
-    color: #FFF;
-    font-weight: bold;
-    font-size: 35px;
+/* color: #444;
 } */
+/* .promoButtons a.active:before {
+  background-color: #235f93;
+  background-position: center;
+  content: " ";
+}
+.promoButtons a:before {
+  display: inline-block;
+  margin: 0 20px -29px 0px;
+  width: 50px;
+  height: 45px;
+  /* background: #cfd85b; */
+/* background-position: center; */
+/* text-align: center;
+  
+}  */
+/* content: " "; */
+/* color: #235f93; */
