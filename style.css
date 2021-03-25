@@ -91,6 +91,10 @@ body {
 .section2 {
   border: 1px solid #ccc;
 }
+.tab-content {
+  clear: left;
+  border: 2px solid #00457c;
+}
 /* Not yet in use
 .active {
   background-color: #235f93;
