@@ -89,8 +89,12 @@ body {
   color: #fff;
 }
 .section2 {
+  border: 2px dashed violet;
+}
+.online-services {
   border: 1px solid #ccc;
   font-size: 13px;
+  padding: 5px;
 }
 .tab-content {
   clear: left;
@@ -115,6 +119,14 @@ body {
 .panelList li a {
   color: #555;
   text-decoration: none;
+}
+.panelListIcon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 20px;
+  text-align: center;
+  background: #c5d149;
 }
 /* Not yet in use
 .active {
