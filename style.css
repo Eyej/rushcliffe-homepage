@@ -90,10 +90,19 @@ body {
 }
 .section2 {
   border: 1px solid #ccc;
+  font-size: 13px;
 }
 .tab-content {
   clear: left;
   border: 2px solid #00457c;
+}
+.online-services .nav-item a {
+  color: #555;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: white;
+  background-color: #00457c;
 }
 /* Not yet in use
 .active {
@@ -116,5 +125,3 @@ body {
 /* text-align: center;
   
 }  */
-/* content: " "; */
-/* color: #235f93; */
