@@ -120,13 +120,17 @@ body {
   color: #555;
   text-decoration: none;
 }
+.panelItem {
+  margin: 10px 0;
+}
 .panelListIcon {
-  display: inline-block;
+  /* display: inline-block; */
   width: 15px;
   height: 15px;
   margin-right: 20px;
   text-align: center;
   background: #c5d149;
+  color: white;
 }
 /* Not yet in use
 .active {
