@@ -90,9 +90,11 @@ body {
 }
 .section2 {
   border: 2px dashed violet;
+  display: flex;
 }
 .online-services {
   border: 1px solid #ccc;
+  width: 508px;
   font-size: 13px;
   padding: 5px;
 }
@@ -155,6 +157,10 @@ body {
   background-color: #0099cc;
   color: white;
 }
+.news {
+  width: 220px;
+  border: 1px solid #ccc;
+}
 /* Not yet in use
 .active {
   background-color: #235f93;
@@ -163,10 +169,11 @@ body {
 margin: 10px 0;
     display: inline-flex;
 } */
-/* .promoButtons a.active:before {
-  background-color: #235f93;
-  background-position: center;
-  content: " ";
+/* .headerbackground {
+    background: #dcddde!important;
+    padding: 5px;
+    font-weight: bold;
+    position: relative;
 }
 .promoButtons a:before {
   display: inline-block;
