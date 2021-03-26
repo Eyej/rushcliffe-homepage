@@ -110,11 +110,13 @@ body {
 }
 .tab-pane .panel {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .panelList {
   list-style: none;
   padding-left: 0;
+  margin-bottom: 0;
+  padding: 10px 0;
 }
 .panelList li a {
   color: #555;
@@ -132,11 +134,34 @@ body {
   background: #c5d149;
   color: white;
 }
+.tabContentBottom {
+  background: #dcddde;
+}
+.tcbIcon {
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  margin-right: 20px;
+  text-align: center;
+  background: #235f93;
+  color: white;
+}
+.tcbIcon2 {
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  margin-right: 20px;
+  text-align: center;
+  background-color: #0099cc;
+  color: white;
+}
 /* Not yet in use
 .active {
   background-color: #235f93;
   /* background: #CCC; */
 /* color: #444;
+margin: 10px 0;
+    display: inline-flex;
 } */
 /* .promoButtons a.active:before {
   background-color: #235f93;
