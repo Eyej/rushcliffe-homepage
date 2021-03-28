@@ -163,24 +163,47 @@ body {
 }
 .newsHeadline {
   background: #dcddde !important;
-  padding: 5px;
+  /* padding: 5px; */
   font-weight: bold;
   position: relative;
 }
 .newsIcon {
-  display: inline-block;
-  margin: -5px 10px -5px -5px;
   width: 35px;
   height: 30px;
   text-align: center;
-  padding: 1px 0 0 0;
   background: #669933;
   background-position: center;
   color: #fff;
   font-weight: bold;
-  font-size: 35px;
-  padding: 2px 0 0 0;
-  vertical-align: top;
+  margin-right: 10px;
+}
+.newsHeadline a {
+  text-decoration: none;
+  color: #444;
+  font-size: 24px;
+}
+.news a:hover {
+  text-decoration: underline;
+  color: #57822b;
+}
+.newsBox {
+  background-color: #e7e7e8;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.newsBox h3 {
+  font-size: 15px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+.newsBox a {
+  text-decoration: none;
+  color: #444;
+}
+.newsBox p {
+  margin-top: -10px;
+  font-size: 12px;
+  margin-bottom: 20px;
 }
 /* Not yet in use
 .active {
