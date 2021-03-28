@@ -1,6 +1,4 @@
-function displayContent(event) {
-  //   console.log(event);
-  //   alert("Hiya!");
+function displayTab2Content() {
   paneltab2Content.innerHTML = `<div class="clearfix panel">
         <ul class="panelList">
             <li class="panelItem">
@@ -76,4 +74,149 @@ function displayContent(event) {
 }
 let paneltab2 = document.querySelector("#tab2");
 let paneltab2Content = document.querySelector("#tellUs");
-paneltab2.addEventListener("click", displayContent);
+paneltab2.addEventListener("click", displayTab2Content);
+
+// display tab3content
+function displayTab3Content() {
+  paneltab3Content.innerHTML = `<div class="clearfix panel">
+        <ul class="panelList">
+            <li class="panelItem">
+                <span><i class="fas fa-angle-right panelListIcon"></i></span>
+                <a href="https://www.rushcliffe.gov.uk/counciltax/paycounciltax/">Council Tax</a>
+            </li>
+            <li class="panelItem">
+                <span><i class="fas fa-angle-right panelListIcon"></i></span>
+                <a href="http://www.nottinghamshire.gov.uk/transport/parking/pay-a-parking-fine">Pay a parking fine</a> 
+            </li>
+            <li class="panelItem">
+                <span><i class="fas fa-angle-right panelListIcon"></i></span>
+                <a href="https://www.civicaepay.co.uk/Rushcliffe/webpay_public/webpay/default.aspx?fund=09">Business rates</a>
+            </li>
+            <li class="panelItem">
+                <span><i class="fas fa-angle-right panelListIcon"></i></span>
+                <a href="https://www.civicaepay.co.uk/Rushcliffe/webpay_public/webpay/default.aspx?fund=21">Facilities hire</a>
+            </li>
+            <li class="panelItem">
+                <span><i class="fas fa-angle-right panelListIcon"></i></span>
+                <a href="https://selfservice.rushcliffe.gov.uk/renderform.aspx?t=1248&k=18715E15F9236B31EAF237744A469435EC645D15">Pay your garden waste bin</a>
+            </li>
+            <li class="panelItem">
+                <span><i class="fas fa-angle-right panelListIcon"></i></span>
+                <a href="https://www.civicaepay.co.uk/Rushcliffe/webpay_public/webpay/default.aspx?fund=21">Temporary events notice</a>
+            </li>
+        </ul>
+        <ul class="panelList">
+            <li class="panelItem">
+                <span><i class="fas fa-angle-right panelListIcon"></i></span>
+                <a href="https://eserv.rushcliffe.gov.uk/formsmaster/public/showform.asp?fm_fid=91"
+                    >Contact us -general enquiries form</a>&nbsp;
+            </li>
+            <li class="panelItem">
+                <span><i class="fas fa-angle-right panelListIcon"></i></span>
+                <a href="https://eserv.rushcliffe.gov.uk/formsmaster/public/showform.asp?fm_fid=299">Planning fees</a>&nbsp;
+            </li>
+            <li class="panelItem">
+                <span><i class="fas fa-angle-right panelListIcon"></i></span>
+                <a href="https://www.rushcliffe.gov.uk/homealarms/">Home alarms</a>
+            </li>
+            <li class="panelItem">
+                <span><i class="fas fa-angle-right panelListIcon"></i></span>
+                <a href="https://www.civicaepay.co.uk/Rushcliffe/webpay_public/webpay/default.aspx?fund=21">Direct debit: Council tax/ Business rates</a>
+            </li>
+            <li class="panelItem">
+                <span><i class="fas fa-angle-right panelListIcon"></i></span>
+                <a href="https://www.civicaepay.co.uk/Rushcliffe/webpay_public/webpay/default.aspx?fund=05">Pay your invoice online</a>
+            </li>
+        </ul>
+</div>
+<div class="tabContentBottom clearfix">
+    <ul class="panel panelList">
+        <li>
+            <span class="tcbIcon"><i class="fas fa-angle-right fa-2x "></i></span>
+            <a href="https://www.rushcliffe.gov.uk/doitonline/#d.en.2579">See more services</a>
+        </li>
+        <li>
+            <span class="tcbIcon2"><i class="fas fa-mouse fa-2x "></i></span>
+            <a href="https://eserv.rushcliffe.gov.uk/self-serve/kiosk.asp" class="floatLeft">Save time, do it
+                online</a>
+        </li>
+    </ul>
+</div>`;
+}
+
+let paneltab3 = document.querySelector("#tab3");
+let paneltab3Content = document.querySelector("#pay");
+paneltab3.addEventListener("click", displayTab3Content);
+
+// display tab4content
+function displayTab4Content() {
+  paneltab4Content.innerHTML = `<div class="clearfix panel">
+        <ul class="panelList">
+            <li class="panelItem">
+                <span><i class="fas fa-angle-right panelListIcon"></i></span>
+                <a href="https://eserv.rushcliffe.gov.uk/formsmaster/public/showform.asp?fm_fid=343">Apply for a job online</a>
+            </li>
+            <li class="panelItem">
+                <span><i class="fas fa-angle-right panelListIcon"></i></span>
+                <a href="https://www.planningportal.co.uk/">Planning permission</a> 
+            </li>
+            <li class="panelItem">
+                <span><i class="fas fa-angle-right panelListIcon"></i></span>
+                <a href="https://rushcliffeclaims.teamnetsol.com/index.jsp">Housing benefit and Council tax reduction</a>
+            </li>
+            <li class="panelItem">
+                <span><i class="fas fa-angle-right panelListIcon"></i></span>
+                <a href="https://eserv.rushcliffe.gov.uk/formsmaster/public/showform.asp?fm_fid=151">Freedom of Information request</a>
+            </li>
+            <li class="panelItem">
+                <span><i class="fas fa-angle-right panelListIcon"></i></span>
+                <a href="http://www.home-search.org.uk/Data/ASPPages/1/30.aspx">Find somewhere to live - Homesearch</a>
+            </li>
+            <li class="panelItem">
+                <span><i class="fas fa-angle-right panelListIcon"></i></span>
+                <a href="https://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/aboutus/corporateinformation/GDPR%20RBC%20Subject%20Access%20Request%20Form.pdf"
+                    >Subject Access Request (3 - 124KB)</a>&nbsp;
+            </li>
+        </ul>
+        <ul class="panelList">
+            <li class="panelItem">
+                <span><i class="fas fa-angle-right panelListIcon"></i></span>
+                <a href="https://www.rushcliffe.gov.uk/business/rulesandregulations/licensing/alcoholentertainmentandfood/a-zoflicenses/">Licensing</a>&nbsp;
+            </li>
+            <li class="panelItem">
+                <span><i class="fas fa-angle-right panelListIcon"></i></span>
+                <a href="http://www.nottinghamshire.gov.uk/travelling/travel/buses/concessionarytravel/">Bus passes</a>
+            </li>
+            <li class="panelItem">
+                <span><i class="fas fa-angle-right panelListIcon"></i></span>
+                <a href="http://www.nottinghamshire.gov.uk/transport/parking/apply-for-residents-parking-permit">Residents parking permit</a>
+            </li>
+            <li class="panelItem">
+                <span><i class="fas fa-angle-right panelListIcon"></i></span>
+                <a href="https://www.gov.uk/register-to-vote">Electoral Register</a>
+            </li>
+            <li class="panelItem">
+                <span><i class="fas fa-angle-right panelListIcon"></i></span>
+                <a href="http://www.businesslink.gov.uk/bdotg/action/blukLicenceLanding?r.l1=1075193162">Temporary events notice</a>
+            </li>
+        </ul>
+</div>
+<div class="tabContentBottom clearfix">
+    <ul class="panel panelList">
+        <li>
+            <span class="tcbIcon"><i class="fas fa-angle-right fa-2x "></i></span>
+            <a href="https://www.rushcliffe.gov.uk/doitonline/#d.en.2579">See more services</a>
+        </li>
+        <li>
+            <span class="tcbIcon2"><i class="fas fa-mouse fa-2x "></i></span>
+            <a href="https://eserv.rushcliffe.gov.uk/self-serve/kiosk.asp" class="floatLeft">Save time, do it
+                online</a>
+        </li>
+    </ul>
+    <!-- <div class="clearing"></div> -->
+</div>`;
+}
+
+let paneltab4 = document.querySelector("#tab4");
+let paneltab4Content = document.querySelector("#apply");
+paneltab4.addEventListener("click", displayTab4Content);
