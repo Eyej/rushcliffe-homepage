@@ -4,6 +4,7 @@ body {
 }
 .container {
   border: 1px dotted goldenrod;
+  display: flex;
 }
 .mainpage {
   margin: 10px 15px;
@@ -94,7 +95,6 @@ body {
 }
 .online-services {
   border: 1px solid #ccc;
-  width: 508px;
   font-size: 13px;
   padding: 5px;
 }
@@ -158,8 +158,29 @@ body {
   color: white;
 }
 .news {
-  width: 220px;
-  border: 1px solid #ccc;
+  border: 5px solid #ccc;
+  padding: 5px;
+}
+.newsHeadline{
+  background: #dcddde!important;
+    padding: 5px;
+    font-weight: bold;
+    position: relative;
+}
+.newsIcon{
+  display: inline-block;
+    margin: -5px 10px -5px -5px;
+    width: 35px;
+    height: 30px;
+    text-align: center;
+    padding: 1px 0 0 0;
+    background: #669933;
+    background-position: center;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 35px;
+    padding: 2px 0 0 0;
+    vertical-align: top;
 }
 /* Not yet in use
 .active {
@@ -169,12 +190,7 @@ body {
 margin: 10px 0;
     display: inline-flex;
 } */
-/* .headerbackground {
-    background: #dcddde!important;
-    padding: 5px;
-    font-weight: bold;
-    position: relative;
-}
+
 .promoButtons a:before {
   display: inline-block;
   margin: 0 20px -29px 0px;
