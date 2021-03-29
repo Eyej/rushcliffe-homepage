@@ -89,11 +89,18 @@ body {
   padding-left: 0;
 }
 .promoList li {
-  background: #dcddde;
+  background: #666;
   padding: 0;
+  margin-bottom: 4px;
+  border: 1px solid #dcddde;
+}
+.list-group-item.active {
+  z-index: 2;
+  color: #666;
+  background-color: #ccc;
+  border-color: #ccc;
 }
 .promoLabel {
-  background: #666;
   text-align: center;
   position: relative;
   top: -9px;
@@ -102,11 +109,12 @@ body {
 }
 .promoList a {
   color: #fff;
+  padding: 10px;
   text-decoration: none;
 }
 .promoIcon {
   display: inline-block;
-  width: 45px;
+  width: 50px;
   height: 40px;
   text-align: center;
   background: #c5d149;
