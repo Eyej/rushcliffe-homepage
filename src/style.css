@@ -84,10 +84,33 @@ body {
   float: right;
   font-size: 13px;
 }
-.promoButtons a {
-  height: 45px;
+.promoList {
+  list-style-type: none;
+  padding-left: 0;
+}
+.promoList li {
+  background: #dcddde;
+  padding: 0;
+}
+.promoLabel {
   background: #666;
+  text-align: center;
+  position: relative;
+  top: -9px;
+  padding: 12px 20px;
+  margin-left: -3px;
+}
+.promoList a {
   color: #fff;
+  text-decoration: none;
+}
+.promoIcon {
+  display: inline-block;
+  width: 45px;
+  height: 40px;
+  text-align: center;
+  background: #c5d149;
+  color: white;
 }
 .section2 {
   border: 2px dashed violet;
