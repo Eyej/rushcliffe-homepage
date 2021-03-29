@@ -7,8 +7,7 @@ body {
   display: flex;
 }
 .mainpage {
-  margin: 10px 15px;
-  border: 2px solid crimson;
+  margin: 5px 10px;
   background: white;
 }
 .top-banner {
@@ -96,7 +95,6 @@ body {
 }
 .list-group-item.active {
   z-index: 2;
-  color: #666;
   background-color: #ccc;
   border-color: #ccc;
 }
@@ -112,6 +110,9 @@ body {
   padding: 10px;
   text-decoration: none;
 }
+.list-group-item.active a {
+  color: #444;
+}
 .promoIcon {
   display: inline-block;
   width: 50px;
@@ -119,6 +120,11 @@ body {
   text-align: center;
   background: #c5d149;
   color: white;
+}
+.list-group-item.active .promoIcon {
+  transform: rotate(180deg);
+  background-color: #235f93;
+  background-position: center;
 }
 .section2 {
   border: 2px dashed violet;
