@@ -113,6 +113,11 @@ body {
 .list-group-item.active a {
   color: #444;
 }
+/* I noticed Boostrap has styling on hover, trying to update it  */
+/* .promoList li:hover {
+  /* color: inherit; */
+/* background: #666; */
+/* }  */
 .promoIcon {
   display: inline-block;
   width: 50px;

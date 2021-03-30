@@ -220,3 +220,34 @@ function displayTab4Content() {
 let paneltab4 = document.querySelector("#tab4");
 let paneltab4Content = document.querySelector("#apply");
 paneltab4.addEventListener("click", displayTab4Content);
+
+// Adding a listener to be executed every time the cursor
+// is moved over a different list item WIP
+function focusOn(event) {
+  if (!event.target.hasAttribute("active")) {
+    event.target.classList.add("active");
+  }
+  contentOne.innerHTML = `<div class="col-4 promoImage">
+                                <img src="https://www.rushcliffe.gov.uk/media/1rushcliffe/media/images/aboutus/news/2020/Coronavirus%20public%20information2.jpg"
+                                    alt="" style="width: 200px; height: 108px;">
+                            </div>
+                            <div class="col-6 promoText">
+                                <p class="h4">
+                                    <a href="https://www.rushcliffe.gov.uk/environmentandwaste/emergencyplanning/coronavirus/#d.en.52852">Public
+                                        information on
+                                        Coronavirus </a>
+                                </p>
+                                <p>Find out what to do if you have symptoms, and what the government is doing about the virus here.
+                                </p>
+                            </div>`;
+  //
+}
+let promoList = document.getElementById("promoList");
+let contentOne = document.querySelector("#promo1");
+promoList.addEventListener("mouseover", focusOn);
+// promoList.addEventListener("mouseout", function (event) {
+//   console.log(event.target);
+//   if (event.target.hasAttribute("class: active")) {
+//     event.target.classList.removeClass("active");
+//   }
+// });
