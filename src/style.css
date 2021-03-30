@@ -6,6 +6,20 @@ body {
   border: 1px dotted goldenrod;
   display: flex;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+ul {
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 1.4em;
+}
 .mainpage {
   margin: 5px 10px;
   background: white;
@@ -114,10 +128,10 @@ body {
   color: #444;
 }
 /* I noticed Boostrap has styling on hover, trying to update it  */
-/* .promoList li:hover {
-  /* color: inherit; */
-/* background: #666; */
-/* }  */
+.promoList li:hover {
+  color: #fff;
+  background: #666;
+}
 .promoIcon {
   display: inline-block;
   width: 50px;
@@ -139,6 +153,13 @@ body {
   border: 1px solid #ccc;
   font-size: 13px;
   padding: 5px;
+  margin: 0 10px;
+}
+.online-services li {
+  margin-bottom: 0;
+}
+.nav-tabs .nav-link {
+  border: 0;
 }
 .tab-content {
   clear: left;
@@ -202,14 +223,15 @@ body {
 .news {
   border: 1px solid #ccc;
   padding: 5px;
+  margin: 0 10px;
 }
-.newsHeadline {
+.headline {
   background: #dcddde !important;
   /* padding: 5px; */
   font-weight: bold;
   position: relative;
 }
-.newsIcon {
+.headlineIcon {
   width: 35px;
   height: 30px;
   text-align: center;
@@ -219,7 +241,7 @@ body {
   font-weight: bold;
   margin-right: 10px;
 }
-.newsHeadline a {
+.headline a {
   text-decoration: none;
   color: #444;
   font-size: 24px;
@@ -236,7 +258,7 @@ body {
 .newsBox h3 {
   font-size: 15px;
   font-weight: bolder;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 .newsBox a {
   text-decoration: none;
@@ -245,24 +267,54 @@ body {
 .newsBox p {
   margin-top: -10px;
   font-size: 12px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
-/* Not yet in use
-.active {
-  background-color: #235f93;
-  /* background: #CCC; */
-/* color: #444;
-margin: 10px 0;
-    display: inline-flex;
-} */
-
-/* .promoButtons a:before {
-  display: inline-block;
-  margin: 0 20px -29px 0px;
-  width: 50px;
-  height: 45px; */
-/* background: #cfd85b; */
-/* background-position: center; */
-/* text-align: center;
-  
-}  */
+.section3 {
+  border: 2px solid rosybrown;
+  display: flex;
+}
+.services {
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin: 0 10px;
+}
+.our-services {
+  font-size: 13px;
+}
+/* Default section styling */
+.columns {
+  float: left;
+  display: inline;
+  margin: 0px 10px 10px 10px;
+  padding: 5px;
+}
+.serviceList {
+  list-style: none;
+  padding-left: 0;
+}
+.serviceListIcon {
+  width: 15px;
+  height: 15px;
+  margin-right: 20px;
+  text-align: center;
+  color: white;
+}
+.serviceList a {
+  text-decoration: none;
+  color: #444;
+}
+.serviceList a:hover {
+  color: #57822b;
+}
+.serviceList li ul {
+  display: flex;
+  margin: 10px 0 0 35px;
+}
+.innerList li {
+  border-right: solid 1px #333;
+  margin-right: 5px;
+  padding-right: 5px;
+}
+.innerList li:last-child {
+  border: 0;
+}
