@@ -282,6 +282,9 @@ h2 {
 .our-services {
   font-size: 13px;
 }
+.our-services ul {
+  width: 317px;
+}
 /* Default section styling */
 .columns {
   float: left;
@@ -308,10 +311,10 @@ h2 {
   color: #57822b;
 }
 .serviceList li ul {
-  display: flex;
   margin: 10px 0 0 35px;
 }
 .innerList li {
+  display: inline;
   border-right: solid 1px #333;
   margin-right: 5px;
   padding-right: 5px;
