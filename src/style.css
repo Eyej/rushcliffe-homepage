@@ -274,7 +274,7 @@ h2 {
   border: 2px solid rosybrown;
   display: flex;
 }
-.services {
+.structure {
   border: 1px solid #ccc;
   padding: 5px;
   margin: 0 10px;
@@ -282,7 +282,7 @@ h2 {
 .our-services {
   font-size: 13px;
 }
-.our-services ul {
+.size {
   width: 317px;
 }
 /* Default section styling */
