@@ -372,3 +372,51 @@ h2 {
 .fa-rss {
   color: #b85e05;
 }
+
+/* Last section style */
+.socials-policy {
+  font-size: 13px;
+  color: #555;
+  justify-content: space-between;
+}
+.policyList {
+  list-style-type: none;
+  padding-left: 0;
+}
+.policyList li {
+  display: inline;
+  border-right: solid 1px #333;
+  margin-right: 5px;
+  padding-right: 5px;
+}
+.policyList li:last-child {
+  border: 0;
+}
+.policyList li a {
+  color: #444;
+}
+.policyList li a:hover {
+  color: #57822b;
+}
+.topspace {
+  margin-top: 10px;
+}
+.email a:hover {
+  color: #57822b;
+}
+.contacts i {
+  padding: 5px;
+  margin: 0 25px -5px 5px;
+  color: #fff;
+  font-size: 20px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  background: #669933;
+}
+.r-map {
+  float: right;
+  display: inline;
+  margin: 10px 40px 10px 10px;
+  padding: 5px;
+}
