@@ -31,14 +31,11 @@ h2 {
 }
 .bannerRight {
   padding: 5px;
-  /* text-align: right; */
-  /* float: right; */
 }
 .headerLinks {
   list-style: none;
   padding-left: 0;
   display: flex;
-  /* justify-content: space-between; */
   margin-top: 10px;
   font-size: 13px;
 }
@@ -52,7 +49,8 @@ h2 {
   text-decoration: none;
   color: white;
 }
-.headerLinks .last {
+/* styling for li:lastchild */
+ul li.last {
   border-right: none;
 }
 .promotions {
@@ -75,7 +73,6 @@ h2 {
   display: block;
   max-width: fit-content;
   margin: 0 10px;
-  /* margin: auto; */
 }
 .promoImage img {
   width: 200px;
@@ -89,7 +86,6 @@ h2 {
 }
 .promoText p a {
   color: rgb(85, 85, 85);
-  /* text-align: left; */
 }
 .promoText p a:hover {
   color: #57822b;
@@ -128,7 +124,7 @@ h2 {
 .list-group-item.active a {
   color: #444;
 }
-/* I noticed Boostrap has styling on hover, trying to update it  */
+/* I noticed Boostrap has styling on hover, trying to update it WIP */
 .promoList li:hover {
   color: #fff;
   background: #666;
@@ -146,9 +142,10 @@ h2 {
   background-color: #235f93;
   background-position: center;
 }
-.section2 {
-  border: 2px dashed violet;
+/* proposed section layout */
+.a-section {
   display: flex;
+  margin: 10px 0;
 }
 .online-services {
   border: 1px solid #ccc;
@@ -156,7 +153,7 @@ h2 {
   padding: 5px;
   margin: 0 10px;
 }
-.online-services li {
+li.sectionLink {
   margin-bottom: 0;
 }
 .nav-tabs .nav-link {
@@ -221,11 +218,6 @@ h2 {
   background-color: #0099cc;
   color: white;
 }
-.news {
-  border: 1px solid #ccc;
-  padding: 5px;
-  margin: 0 10px;
-}
 .headline {
   background: #dcddde !important;
   /* padding: 5px; */
@@ -239,15 +231,16 @@ h2 {
   background: #669933;
   background-position: center;
   color: #fff;
-  font-weight: bold;
   margin-right: 10px;
+  padding-top: 5px;
 }
 .headline a {
   text-decoration: none;
   color: #444;
   font-size: 24px;
 }
-.news a:hover {
+.headline a:hover,
+.newsContainer a:hover {
   text-decoration: underline;
   color: #57822b;
 }
@@ -259,7 +252,6 @@ h2 {
 .newsBox h3 {
   font-size: 15px;
   font-weight: bolder;
-  /* margin-bottom: 20px; */
 }
 .newsBox a {
   text-decoration: none;
@@ -268,18 +260,12 @@ h2 {
 .newsBox p {
   margin-top: -10px;
   font-size: 12px;
-  /* margin-bottom: 20px; */
 }
-.section3 {
-  border: 2px solid rosybrown;
-  display: flex;
-}
+
 .structure {
   border: 1px solid #ccc;
   padding: 5px;
   margin: 0 10px;
-}
-.our-services {
   font-size: 13px;
 }
 .size {
@@ -388,9 +374,6 @@ h2 {
   border-right: solid 1px #333;
   margin-right: 5px;
   padding-right: 5px;
-}
-.policyList li:last-child {
-  border: 0;
 }
 .policyList li a {
   color: #444;
