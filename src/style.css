@@ -350,3 +350,25 @@ h2 {
   border-radius: 4px;
   border: 0;
 }
+/* Styling for social media icons */
+.smIcon {
+  margin-left: 20px;
+}
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-twitter {
+  color: #00a0d1;
+}
+.fa-youtube {
+  color: #c4302b;
+}
+.fa-instagram {
+  color: #bb3b8c;
+}
+.fa-pinterest-p {
+  color: #cb2027;
+}
+.fa-rss {
+  color: #b85e05;
+}
