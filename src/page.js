@@ -224,52 +224,9 @@ paneltab4.addEventListener("click", displayTab4Content);
 // Adding a listener to be executed every time the cursor
 // is moved over a different list item WIP
 
-function focusOn(event) {
-  if (!event.target.hasAttribute("active")) {
-    event.target.classList.add("active");
-    let selected = Array.from(event.path[2]);
-    // if (event.path[2].includes("#p1")) {
-    console.log(selected, Array.isArray(selected));
-    // }
-  }
-
-  contentTwo.innerHTML = `<div class="col-4 promoImage">
-                                <img src="https://www.rushcliffe.gov.uk/media/1rushcliffe/media/images/aboutus/news/2020/Further%20business%20support%20has%20been%20outlined%20for%20Rushcliffe%20business%20owners-450x300.JPG"
-                                    alt="" style="width: 200px; height: 108px;">
-                            </div>
-                            <div class="col-6 promoText">
-                                <p class="h4"><a href="https://www.rushcliffe.gov.uk/business/coronavirus-businesssupport/#d.en.53046">COVID-19 Business Support </a></p>
-                                <p>Find out about the support available for businesses that have been affected when entering Tier 2, Tier 3 and National
-                                Lockdown restrictions.
-                                </p>
-                            </div>`;
-
-  contentThree.innerHTML = `<div class="promoImage col-4">
-                                <img src="https://www.rushcliffe.gov.uk/media/1rushcliffe/media/images/aboutus/news/2020/Liz%20Harris%20Deputy%20Locality%20Director%20South%20Nottinghamshire,%20Cllr%20Simon%20Robinson%20and%20Louise%20Szypryt%20Directorate%20Clinical%20LEad%20outside%20the%20vaccination%20centre-449x300.JPG"
-                                    alt="" style="width: 200px; height: 108px;">
-                            </div>
-                            <div class="col-6 promoText">
-                                <p class="h4"><a href="https://www.rushcliffe.gov.uk/aboutus/newsandpublications/latestnews/stories/name,55765,en.php">Vaccination service at
-                                        Gamston Community Hall</a></p>
-                                <p>Gamston Community Hall opened as a COVID-19 Vaccination Service on January 6. For all enquiries on
-                                    Vaccination appointments please visit Nottingham and Nottinghamshire’s CCG website. </p>
-                            </div>`;
-
-  contentFour.innerHTML = `<div class="promoImage col-4">
-                                <img src="https://www.rushcliffe.gov.uk/media/1rushcliffe/media/images/aboutus/news/2021/Cotgrave%20Community%20Testing-450x337.jpg"
-                                    alt="" style="width: 200px; height: 108px;">
-                            </div>
-                            <div class="col-6 promoText">
-                                <p class="h4"><a href="https://www.rushcliffe.gov.uk/aboutus/newsandpublications/latestnews/stories/name,56814,en.php">Community testing site
-                                        in Cotgrave</a></p>
-                                <p>A rapid mobile community testing site is set to visit Cotgrave twice a week, providing residents with no
-                                    COVID-19 symptoms regular access to asymptomatic testing.</p>
-                            </div>`;
-}
-
-function displaySection(section) {
-  console.log(section);
-}
+// function displaySection(section) {
+//   console.log(section);
+// }
 
 let promoList = document.getElementById("promoList");
 let contentOne = document.querySelector("#promo1");
@@ -280,7 +237,56 @@ let contentFour = document.querySelector("#promo4");
 
 function addListener(elementID) {
   const element = document.querySelector(elementID);
-  return element.addEventListener("mouseover", focusOn);
+  element.addEventListener("mouseover", focusOn(event,elementID));
+}
+
+function focusOn(event, elementID) {
+    // if (!event.target.hasAttribute("active")) {
+    //   event.target.classList.add("active");
+    //   displayContent(elementID)
+    // }
+
+    const element = document.querySelector(elementID);
+    if (!['#p4', '#p2', '#p3', '#p1'].includes(element)) {
+       document.querySelector('#p1').classList.remove('active');
+       document.querySelector('#p2').classList.remove('active');
+       document.querySelector('#p3').classList.remove('active');
+       document.querySelector('#p4').classList.remove('active');
+       if (!element.classList.contains('active')) {
+            element.classList.add('active');
+            displayContent(elementID);
+        }
+    } else {
+        if (!element.classList.contains('active')) {
+            element.classList.add('active');
+            displayContent(elementID);
+        }
+    }
+   
+}
+
+function displayContent (elementID) {
+    if (elementID === '#p1') {
+        contentOne.classList.remove('d-none')
+        contentThree.classList.add('d-none')
+        contentFour.classList.add('d-none')
+        contentTwo.classList.add('d-none');    
+    } else if (elementID === '#p2') {
+        contentOne.classList.add('d-none')
+        contentThree.classList.add('d-none')
+        contentFour.classList.add('d-none')
+        contentTwo.classList.remove('d-none');
+    }  else if (elementID === '#p3') {
+        contentOne.classList.add('d-none')
+        contentThree.classList.remove('d-none')
+        contentFour.classList.add('d-none')
+        contentTwo.classList.add('d-none');
+    }  else if (elementID === '#p4') {
+        contentOne.classList.add('d-none')
+        contentThree.classList.add('d-none')
+        contentFour.classList.remove('d-none')
+        contentTwo.classList.add('d-none');
+    }
 }
 
 // promoList.addEventListener("mouseout", function (event) {
