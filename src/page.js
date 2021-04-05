@@ -224,74 +224,58 @@ paneltab4.addEventListener("click", displayTab4Content);
 // Adding a listener to be executed every time the cursor
 // is moved over a different list item WIP
 
-// function displaySection(section) {
-//   console.log(section);
-// }
-
 let promoList = document.getElementById("promoList");
 let contentOne = document.querySelector("#promo1");
 let contentTwo = document.querySelector("#promo2");
 let contentThree = document.querySelector("#promo3");
 let contentFour = document.querySelector("#promo4");
-// promoList.addEventListener("mouseover", focusOn);
 
 function addListener(elementID) {
   const element = document.querySelector(elementID);
-  element.addEventListener("mouseover", focusOn(event,elementID));
+  element.addEventListener("mouseover", focusOn(event, elementID));
 }
 
 function focusOn(event, elementID) {
-    // if (!event.target.hasAttribute("active")) {
-    //   event.target.classList.add("active");
-    //   displayContent(elementID)
-    // }
+  // Code to add/remove active class
 
-    const element = document.querySelector(elementID);
-    if (!['#p4', '#p2', '#p3', '#p1'].includes(element)) {
-       document.querySelector('#p1').classList.remove('active');
-       document.querySelector('#p2').classList.remove('active');
-       document.querySelector('#p3').classList.remove('active');
-       document.querySelector('#p4').classList.remove('active');
-       if (!element.classList.contains('active')) {
-            element.classList.add('active');
-            displayContent(elementID);
-        }
-    } else {
-        if (!element.classList.contains('active')) {
-            element.classList.add('active');
-            displayContent(elementID);
-        }
+  const element = document.querySelector(elementID);
+  if (!["#p4", "#p2", "#p3", "#p1"].includes(element)) {
+    document.querySelector("#p1").classList.remove("active");
+    document.querySelector("#p2").classList.remove("active");
+    document.querySelector("#p3").classList.remove("active");
+    document.querySelector("#p4").classList.remove("active");
+    if (!element.classList.contains("active")) {
+      element.classList.add("active");
+      displayContent(elementID);
     }
-   
+  } else {
+    if (!element.classList.contains("active")) {
+      element.classList.add("active");
+      displayContent(elementID);
+    }
+  }
 }
 
-function displayContent (elementID) {
-    if (elementID === '#p1') {
-        contentOne.classList.remove('d-none')
-        contentThree.classList.add('d-none')
-        contentFour.classList.add('d-none')
-        contentTwo.classList.add('d-none');    
-    } else if (elementID === '#p2') {
-        contentOne.classList.add('d-none')
-        contentThree.classList.add('d-none')
-        contentFour.classList.add('d-none')
-        contentTwo.classList.remove('d-none');
-    }  else if (elementID === '#p3') {
-        contentOne.classList.add('d-none')
-        contentThree.classList.remove('d-none')
-        contentFour.classList.add('d-none')
-        contentTwo.classList.add('d-none');
-    }  else if (elementID === '#p4') {
-        contentOne.classList.add('d-none')
-        contentThree.classList.add('d-none')
-        contentFour.classList.remove('d-none')
-        contentTwo.classList.add('d-none');
-    }
+function displayContent(elementID) {
+  if (elementID === "#p1") {
+    contentOne.classList.remove("d-none");
+    contentThree.classList.add("d-none");
+    contentFour.classList.add("d-none");
+    contentTwo.classList.add("d-none");
+  } else if (elementID === "#p2") {
+    contentOne.classList.add("d-none");
+    contentThree.classList.add("d-none");
+    contentFour.classList.add("d-none");
+    contentTwo.classList.remove("d-none");
+  } else if (elementID === "#p3") {
+    contentOne.classList.add("d-none");
+    contentThree.classList.remove("d-none");
+    contentFour.classList.add("d-none");
+    contentTwo.classList.add("d-none");
+  } else if (elementID === "#p4") {
+    contentOne.classList.add("d-none");
+    contentThree.classList.add("d-none");
+    contentFour.classList.remove("d-none");
+    contentTwo.classList.add("d-none");
+  }
 }
-
-// promoList.addEventListener("mouseout", function (event) {
-//   console.log(event.target);
-//   if (event.target.hasAttribute("class: active")) {
-//     event.target.classList.removeClass("active");
-//   }
-// });

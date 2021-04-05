@@ -2,10 +2,11 @@
 body {
   background: #dcddde;
 }
-.container {
+/* .container {
   border: 1px dotted goldenrod;
   display: flex;
-}
+} */
+
 h1,
 h2,
 h3,
@@ -22,7 +23,7 @@ h2 {
   color: #555;
 }
 .mainpage {
-  margin: 5px 10px;
+  /* margin: 0 0px; */
   background: white;
 }
 .top-banner {
@@ -56,7 +57,7 @@ ul li.last {
 .promotions {
   display: flex;
   position: relative;
-  height: 250px;
+  height: 200px;
 }
 .promoBox {
   /* height: 200px; */
@@ -124,11 +125,7 @@ ul li.last {
 .list-group-item.active a {
   color: #444;
 }
-/* I noticed Boostrap has styling on hover, trying to update it WIP */
-/* .promoList li:hover {
-  color: #fff;
-  background: #666;
-} */
+
 .promoIcon {
   display: inline-block;
   width: 50px;
